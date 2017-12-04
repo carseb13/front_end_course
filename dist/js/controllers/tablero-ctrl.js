@@ -1,0 +1,1 @@
+app.controller("TableroCtrl",["$scope","TableroSrv",function($scope,tableroSrv){tableroSrv.listar().then(function(response){console.log(response)},function(response){console.log(response)})}]);

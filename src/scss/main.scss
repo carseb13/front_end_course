@@ -1,0 +1,13 @@
+// ESTILOS EXTERNOS
+@import "../../node_modules/font-awesome/scss/font-awesome";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+//
+$footer_bg:rgba(26, 88, 50, 0.82);
+.body {
+    height: 450px
+}
+.footer {
+    height: 200px;
+    width: 100%;
+    background: $footer_bg;
+}
