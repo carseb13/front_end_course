@@ -1,7 +1,9 @@
 app.controller('TableroCtrl',['$scope','TableroSrv', function($scope,tableroSrv){
-             tableroSrv.listar()
+            $scope.tableros={};     
+            tableroSrv.listar()
               .then(function successCallback(response){
-                              console.log(response);
+                    //todo lo disponible en $scope esta disponible en los partials
+                           $scope.tableros= response.data;
                 },function errorCallback(response){
                               console.log(response);
                });

@@ -1,1 +1,1 @@
-app.controller("ListasCtrl",["$scope",function($scope){}]);
+app.controller("ListasCtrl",["$scope","$routeParams","ListaSrv",function($scope,$routeParams,ListaSrv){$scope.listas=[],ListaSrv.listar($routeParams).then(function(response){$scope.listas=response.data},function(response){console.log(response)})}]);

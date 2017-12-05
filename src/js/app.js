@@ -9,7 +9,7 @@ app.config(['$routeProvider', function($routerProvider){
             templateUrl:'./partials/tablero-partial.html',
             controller:'TableroCtrl'
         })
-        .when('/tableros/:id/listas',{
+        .when('/tableros/:idTablero/listas',{
             templateUrl:'./partials/listas-partial.html',
             controller:'ListasCtrl'
         })
